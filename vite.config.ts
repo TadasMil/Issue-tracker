@@ -1,9 +1,9 @@
 /// <reference types="vitest" />
 
-import { fileURLToPath, URL } from 'node:url';
+import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,10 +19,7 @@ export default defineConfig({
     include: ['**/?(*.)+(spec|test).[jt]s?(x)'],
     environment: 'jsdom',
     deps: {
-      inline: ['vue', 'vue-router', 'bootstrap-vue', 'bootstrap', 'bootstrap-vue-3'],
-    },
-    snapshotFormat: {
-      printBasicPrototype: true,
+      inline: ['vue', 'vue-router'],
     },
   },
-});
+})
