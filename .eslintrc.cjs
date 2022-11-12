@@ -15,7 +15,8 @@ module.exports = {
   rules: {
     'prettier/prettier': [
       'error',
-      { singleQuote: true, endOfLine: 'auto', tabWidth: 2, printWidth: 100 },
+      { singleQuote: true, endOfLine: 'auto', tabWidth: 2, printWidth: 80 },
     ],
+    'vue/no-setup-props-destructure': 'off',
   },
 }

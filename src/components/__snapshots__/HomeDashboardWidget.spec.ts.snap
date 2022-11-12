@@ -1,0 +1,16 @@
+// Vitest Snapshot v1
+
+exports[`HomeDashboardWidget > should render the component 1`] = `
+"<div class=\\"card d-flex flex-column justify-content-center text-white text-center shadow rounded-0 border-0 bg-info\\">
+  <!---->
+  <!---->
+  <div class=\\"card-body\\">
+    <!---->
+    <!---->
+    <p class=\\"text-capitalize h5 mb-4\\">My Title</p>
+    <p class=\\"h1\\">123</p>
+  </div>
+  <!---->
+  <!---->
+</div>"
+`;
