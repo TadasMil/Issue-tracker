@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`BaseSidebar > should render the component given home page is active 1`] = `
+"<header class=\\"h-100\\">
+  <nav class=\\"navbar bg-dark navbar-expand h-100 py-0\\">
+    <ul class=\\"navbar-nav justify-content- d-flex h-100 flex-column h-100\\">
+      <li class=\\"nav-item\\"><a class=\\"active nav-link\\" to=\\"/\\" href=\\"/\\" target=\\"_self\\"><i class=\\"bi bi-house-door text-light fa-2x p-2\\"></i></a></li>
+      <li class=\\"nav-item\\"><a class=\\"nav-link\\" to=\\"/issues/open\\" href=\\"/issues/open\\" target=\\"_self\\"><i class=\\"bi bi-folder2-open text-light fa-2x p-2\\"></i></a></li>
+      <li class=\\"nav-item\\"><a class=\\"nav-link\\" to=\\"/issues/completed\\" href=\\"/issues/completed\\" target=\\"_self\\"><i class=\\"bi bi-folder-check text-light fa-2x p-2\\"></i></a></li>
+      <li class=\\"nav-item\\"><a class=\\"nav-link\\" to=\\"/issues/trashed\\" href=\\"/issues/trashed\\" target=\\"_self\\"><i class=\\"bi bi-folder-x text-light fa-2x p-2\\"></i></a></li>
+    </ul>
+  </nav>
+</header>"
+`;

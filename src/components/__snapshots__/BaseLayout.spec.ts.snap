@@ -1,0 +1,25 @@
+// Vitest Snapshot v1
+
+exports[`BaseLayout > should render the component 1`] = `
+"<div class=\\"container-fluid\\">
+  <div class=\\"row\\">
+    <div class=\\"col col-sm-auto p-0\\">
+      <base-sidebar-stub></base-sidebar-stub>
+    </div>
+    <div class=\\"col col-sm p-3 min-vh-100\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`BaseLayout > should render the default slot 1`] = `
+"<div class=\\"container-fluid\\">
+  <div class=\\"row\\">
+    <div class=\\"col col-sm-auto p-0\\">
+      <base-sidebar-stub></base-sidebar-stub>
+    </div>
+    <div class=\\"col col-sm p-3 min-vh-100\\">
+      <div>Default slot</div>
+    </div>
+  </div>
+</div>"
+`;
