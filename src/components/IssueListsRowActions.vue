@@ -1,19 +1,17 @@
-<script setup lang="ts" name="ActionableDropdown">
-const emit = defineEmits<{
-  (event: 'edit'): void
-  (event: 'mark-as-trashed'): void
-  (event: 'mark-as-completed'): void
-}>()
+<script setup lang="ts" name="IssueListsRowActions">
+import { useAttrs } from 'vue'
+
+const attrs = useAttrs()
 </script>
 
 <template>
   <b-dropdown
     id="dropdown"
-    aria-labelledby="dropdown"
     size="lg"
     variant="link"
-    dropleft
+    aria-labelledby="dropdown"
     toggle-class="text-decoration-none"
+    dropleft
     no-caret
   >
     <template #button-content>
@@ -29,19 +27,40 @@ const emit = defineEmits<{
       </div>
     </template>
 
-    <b-dropdown-item @click="emit('edit')">
+    <slot />
+
+    <b-dropdown-item v-if="attrs.onEdit" @click="attrs.onEdit">
       Edit
       <i class="bi bi-pencil fa-1x text-success"></i>
     </b-dropdown-item>
 
-    <b-dropdown-item @click="emit('mark-as-trashed')">
+    <b-dropdown-item
+      v-if="attrs.onMarkAsTrashed"
+      @click="attrs.onMarkAsTrashed"
+    >
       Mark as trashed
       <i class="bi bi-trash fa-1x text-danger"></i>
     </b-dropdown-item>
 
-    <b-dropdown-item @click="emit('mark-as-completed')">
+    <b-dropdown-item v-if="attrs.onMarkAsOpen" @click="attrs.onMarkAsOpen">
+      Mark as open
+      <i class="bi bi-repeat fa-1x text-success"></i>
+    </b-dropdown-item>
+
+    <b-dropdown-item
+      v-if="attrs.onMarkAsCompleted"
+      @click="attrs.onMarkAsCompleted"
+    >
       Mark as completed
       <i class="bi bi-check-circle fa-1x text-success"></i>
+    </b-dropdown-item>
+
+    <b-dropdown-item
+      v-if="attrs.onRestoreTrashed"
+      @click="attrs.onRestoreTrashed"
+    >
+      Restore trashed issue
+      <i class="bi bi-trash fa-1x text-danger"></i>
     </b-dropdown-item>
   </b-dropdown>
 </template>

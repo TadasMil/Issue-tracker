@@ -1,9 +1,0 @@
-// Vitest Snapshot v1
-
-exports[`IssuesList > should render empty component state 1`] = `"<issues-list-empty-stub></issues-list-empty-stub>"`;
-
-exports[`IssuesList > should render the component 1`] = `
-"<div>
-  <issues-list-row-stub title=\\"My first issue\\" description=\\"My first issue description\\"></issues-list-row-stub>
-</div>"
-`;

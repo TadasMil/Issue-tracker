@@ -81,22 +81,4 @@ describe('mutations', () => {
     expect(state.issues).toHaveLength(1)
     expect(state.issues[0].status).toBe('COMPLETED')
   })
-
-  it('should mark an issue as trashed', () => {
-    const state = {
-      issues: [
-        {
-          id: '1',
-          title: 'Test issue',
-          description: 'Test issue description',
-          status: 'OPEN',
-        },
-      ],
-    }
-
-    mutations.markIssueAsTrashed(state, '1')
-
-    expect(state.issues).toHaveLength(1)
-    expect(state.issues[0].status).toBe('TRASHED')
-  })
 })

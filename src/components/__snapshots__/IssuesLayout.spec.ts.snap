@@ -1,6 +1,12 @@
 // Vitest Snapshot v1
 
-exports[`IssuesListEmpty > should render the component 1`] = `
+exports[`IssuesLayout > should render issue slot given 1`] = `
+"<div>
+  <div>Issue</div>
+</div>"
+`;
+
+exports[`IssuesLayout > should render the default empty component 1`] = `
 "<div class=\\"card text-center text-muted shadow-sm border-0\\">
   <!---->
   <!---->

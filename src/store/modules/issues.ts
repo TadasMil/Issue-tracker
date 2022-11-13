@@ -1,5 +1,5 @@
 import { ISSUE_STATUS } from '@/constnats'
-import type { IIssue, IIssueStatus } from '@/types'
+import type { IIssue, IIssueStatus, INewIssue } from '@/types'
 import { v4 as uuidv4 } from 'uuid'
 import { storage } from '../storage'
 
@@ -10,10 +10,10 @@ const state: {
 }
 
 const getIssueByStatus = (issues: IIssue[], status: IIssueStatus) =>
-  issues.filter((issue) => issue.status === status)
+  issues.filter((issue) => issue.status === status && !issue?.trashed)
 
 const mutations = {
-  createIssue(state: { issues: IIssue[] }, issue: IIssue) {
+  createIssue(state: { issues: IIssue[] }, issue: INewIssue) {
     const newIssue = {
       ...issue,
       id: uuidv4(),
@@ -48,7 +48,23 @@ const mutations = {
     const issue = state.issues.find((issue) => issue.id === id)
 
     if (issue) {
-      issue.status = ISSUE_STATUS.TRASHED
+      issue.trashed = true
+      storage.setIssues(state.issues)
+    }
+  },
+  markIssueAsOpen(state: { issues: IIssue[] }, id: string) {
+    const issue = state.issues.find((issue) => issue.id === id)
+
+    if (issue) {
+      issue.status = ISSUE_STATUS.OPEN
+      storage.setIssues(state.issues)
+    }
+  },
+  restoreTrashedIssue(state: { issues: IIssue[] }, id: string) {
+    const issue = state.issues.find((issue) => issue.id === id)
+
+    if (issue) {
+      issue.trashed = false
       storage.setIssues(state.issues)
     }
   },
@@ -66,7 +82,7 @@ export default {
       return getIssueByStatus(state.issues, ISSUE_STATUS.COMPLETED)
     },
     trashedIssues(state: { issues: IIssue[] }) {
-      return getIssueByStatus(state.issues, ISSUE_STATUS.TRASHED)
+      return state.issues.filter((issue) => issue.trashed)
     },
   },
 }

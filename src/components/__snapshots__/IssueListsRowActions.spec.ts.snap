@@ -1,0 +1,115 @@
+// Vitest Snapshot v1
+
+exports[`IssueListsRowActions > should call onEdit when Edit is clicked 1`] = `
+"<div class=\\"btn-group\\" aria-labelledby=\\"dropdown\\"><button class=\\"btn btn-link btn-lg text-decoration-none dropdown-toggle dropdown-toggle-no-caret\\" type=\\"button\\" id=\\"dropdown\\" data-bs-toggle=\\"dropdown\\" aria-expanded=\\"false\\">
+    <!---->
+    <div class=\\"btn-content\\">
+      <div class=\\"text-dark\\"><svg width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\">
+          <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" d=\\"M16 24a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z\\"></path>
+        </svg></div>
+    </div>
+  </button>
+  <!---->
+  <ul class=\\"dropdown-menu\\" aria-labelledby=\\"dropdown\\" role=\\"menu\\">
+    <li role=\\"presentation\\" class=\\"\\"><button class=\\"dropdown-item\\" type=\\"button\\" target=\\"_self\\"> Edit <i class=\\"bi bi-pencil fa-1x text-success\\"></i></button></li>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </ul>
+</div>"
+`;
+
+exports[`IssueListsRowActions > should call onMarkAsCompleted when Mark as completed is clicked 1`] = `
+"<div class=\\"btn-group\\" aria-labelledby=\\"dropdown\\"><button class=\\"btn btn-link btn-lg text-decoration-none dropdown-toggle dropdown-toggle-no-caret\\" type=\\"button\\" id=\\"dropdown\\" data-bs-toggle=\\"dropdown\\" aria-expanded=\\"false\\">
+    <!---->
+    <div class=\\"btn-content\\">
+      <div class=\\"text-dark\\"><svg width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\">
+          <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" d=\\"M16 24a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z\\"></path>
+        </svg></div>
+    </div>
+  </button>
+  <!---->
+  <ul class=\\"dropdown-menu\\" aria-labelledby=\\"dropdown\\" role=\\"menu\\">
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <li role=\\"presentation\\" class=\\"\\"><button class=\\"dropdown-item\\" type=\\"button\\" target=\\"_self\\"> Mark as completed <i class=\\"bi bi-check-circle fa-1x text-success\\"></i></button></li>
+    <!--v-if-->
+  </ul>
+</div>"
+`;
+
+exports[`IssueListsRowActions > should call onMarkAsOpen when Mark as open is clicked 1`] = `
+"<div class=\\"btn-group\\" aria-labelledby=\\"dropdown\\"><button class=\\"btn btn-link btn-lg text-decoration-none dropdown-toggle dropdown-toggle-no-caret\\" type=\\"button\\" id=\\"dropdown\\" data-bs-toggle=\\"dropdown\\" aria-expanded=\\"false\\">
+    <!---->
+    <div class=\\"btn-content\\">
+      <div class=\\"text-dark\\"><svg width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\">
+          <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" d=\\"M16 24a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z\\"></path>
+        </svg></div>
+    </div>
+  </button>
+  <!---->
+  <ul class=\\"dropdown-menu\\" aria-labelledby=\\"dropdown\\" role=\\"menu\\">
+    <!--v-if-->
+    <!--v-if-->
+    <li role=\\"presentation\\" class=\\"\\"><button class=\\"dropdown-item\\" type=\\"button\\" target=\\"_self\\"> Mark as open <i class=\\"bi bi-repeat fa-1x text-success\\"></i></button></li>
+    <!--v-if-->
+    <!--v-if-->
+  </ul>
+</div>"
+`;
+
+exports[`IssueListsRowActions > should call onMarkAsTrashed when Mark as trashed is clicked 1`] = `
+"<div class=\\"btn-group\\" aria-labelledby=\\"dropdown\\"><button class=\\"btn btn-link btn-lg text-decoration-none dropdown-toggle dropdown-toggle-no-caret\\" type=\\"button\\" id=\\"dropdown\\" data-bs-toggle=\\"dropdown\\" aria-expanded=\\"false\\">
+    <!---->
+    <div class=\\"btn-content\\">
+      <div class=\\"text-dark\\"><svg width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\">
+          <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" d=\\"M16 24a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z\\"></path>
+        </svg></div>
+    </div>
+  </button>
+  <!---->
+  <ul class=\\"dropdown-menu\\" aria-labelledby=\\"dropdown\\" role=\\"menu\\">
+    <!--v-if-->
+    <li role=\\"presentation\\" class=\\"\\"><button class=\\"dropdown-item\\" type=\\"button\\" target=\\"_self\\"> Mark as trashed <i class=\\"bi bi-trash fa-1x text-danger\\"></i></button></li>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </ul>
+</div>"
+`;
+
+exports[`IssueListsRowActions > should call onRestoreTrashed when Restore trashed issue is clicked 1`] = `
+"<div class=\\"btn-group\\" aria-labelledby=\\"dropdown\\"><button class=\\"btn btn-link btn-lg text-decoration-none dropdown-toggle dropdown-toggle-no-caret\\" type=\\"button\\" id=\\"dropdown\\" data-bs-toggle=\\"dropdown\\" aria-expanded=\\"false\\">
+    <!---->
+    <div class=\\"btn-content\\">
+      <div class=\\"text-dark\\"><svg width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\">
+          <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" d=\\"M16 24a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z\\"></path>
+        </svg></div>
+    </div>
+  </button>
+  <!---->
+  <ul class=\\"dropdown-menu\\" aria-labelledby=\\"dropdown\\" role=\\"menu\\">
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <li role=\\"presentation\\" class=\\"\\"><button class=\\"dropdown-item\\" type=\\"button\\" target=\\"_self\\"> Restore trashed issue <i class=\\"bi bi-trash fa-1x text-danger\\"></i></button></li>
+  </ul>
+</div>"
+`;
+
+exports[`IssueListsRowActions > should render the component default component 1`] = `
+"<div class=\\"btn-group\\" aria-labelledby=\\"dropdown\\"><button class=\\"btn btn-link btn-lg text-decoration-none dropdown-toggle dropdown-toggle-no-caret\\" type=\\"button\\" id=\\"dropdown\\" data-bs-toggle=\\"dropdown\\" aria-expanded=\\"false\\">
+    <!---->
+    <div class=\\"btn-content\\">
+      <div class=\\"text-dark\\"><svg width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\">
+          <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" d=\\"M16 24a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z\\"></path>
+        </svg></div>
+    </div>
+  </button>
+  <!---->
+  <ul class=\\"dropdown-menu\\" aria-labelledby=\\"dropdown\\" role=\\"menu\\"></ul>
+</div>"
+`;

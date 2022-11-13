@@ -7,22 +7,22 @@ exports[`IssuesListRow > should render the component 1`] = `
   <div class=\\"card-body\\">
     <!---->
     <!---->
-    <div class=\\"container-fluid\\">
-      <div class=\\"row align-content-stretch\\">
-        <div class=\\"col-xl-2 col-4\\">
-          <p class=\\"card-text\\">
-          <p class=\\"mb-1\\">Title:</p>
-          <h5 class=\\"text-truncate mr-2\\">Test title</h5>
-          </p>
-        </div>
-        <div class=\\"col-xl-2 col-4\\">
-          <p class=\\"card-text\\">
-          <p class=\\"mb-1\\">Description:</p>
-          <h5 class=\\"text-truncate mr-2\\">Test description</h5>
-          </p>
-        </div>
-        <div class=\\"col-xl-8 col-4 align-self-center text-end\\">
-          <actionable-dropdown-stub title=\\"Test title\\" description=\\"Test description\\"></actionable-dropdown-stub>
+    <div class=\\"d-flex justify-content-between\\">
+      <div class=\\"container-fluid\\">
+        <div class=\\"row\\">
+          <!--v-if-->
+          <div class=\\"col-lg-2 col-4\\">
+            <p class=\\"card-text\\">
+            <p class=\\"mb-1\\">Title:</p>
+            <h5 class=\\"text-truncate mr-2\\">Test title</h5>
+            </p>
+          </div>
+          <div class=\\"col-lg-6 col-4\\">
+            <p class=\\"card-text\\">
+            <p class=\\"mb-1\\">Description:</p>
+            <h5 class=\\"text-truncate mr-2\\">Test description</h5>
+            </p>
+          </div>
         </div>
       </div>
     </div>

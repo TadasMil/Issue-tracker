@@ -6,8 +6,10 @@ import { useStore } from 'vuex'
 import BasePage from '@/components/BasePage.vue'
 import CreateIssue from '@/components/CreateIssue.vue'
 import EditIssue from '@/components/EditIssue.vue'
-import IssuesList from '@/components/IssuesList.vue'
+import IssuesLayout from '@/components/IssuesLayout.vue'
+import IssuesListRow from '@/components/IssuesListRow.vue'
 import ModalDialog from '@/components/ModalDialog.vue'
+import IssueListsRowActions from '@/components/IssueListsRowActions.vue'
 
 import type { IIssue } from '@/types'
 
@@ -38,13 +40,23 @@ const onMarkAsCompleted = (issue: IIssue) => {
     <b-container fluid class="m-0 p-0">
       <b-row>
         <b-col cols="12" md="8">
-          <IssuesList
-            :issues="store.getters['issues/openIssues']"
+          <IssuesLayout
             class="h-100"
-            @edit="onEdit"
-            @mark-as-trashed="onMarkAsTrashed"
-            @mark-as-completed="onMarkAsCompleted"
-          />
+            :issues="store.getters['issues/openIssues']"
+          >
+            <IssuesListRow
+              v-for="issue in store.getters['issues/openIssues']"
+              :key="issue.id"
+              :title="issue.title"
+              :description="issue.description"
+            >
+              <IssueListsRowActions
+                @edit="onEdit(issue)"
+                @mark-as-trashed="onMarkAsTrashed(issue)"
+                @mark-as-completed="onMarkAsCompleted(issue)"
+              />
+            </IssuesListRow>
+          </IssuesLayout>
         </b-col>
 
         <b-col cols="12" md="4">

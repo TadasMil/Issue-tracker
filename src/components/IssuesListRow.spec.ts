@@ -11,7 +11,7 @@ describe('IssuesListRow', () => {
         description: 'Test description',
       },
       global: {
-        stubs: ['ActionableDropdown'],
+        stubs: ['IssueListsRowActions'],
       },
     })
 
