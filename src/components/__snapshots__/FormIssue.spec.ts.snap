@@ -1,0 +1,25 @@
+// Vitest Snapshot v1
+
+exports[`FormIssue > should render the default form 1`] = `
+"<form class=\\"\\"><input id=\\"title\\" class=\\"form-control\\" type=\\"text\\" placeholder=\\"Enter your name\\">
+  <div class=\\"invalid-feedback\\" id=\\"title-feedback\\"></div>
+  <div class=\\"my-3\\"><textarea id=\\"textarea\\" class=\\"form-control\\" placeholder=\\"Describe the issue...\\" rows=\\"3\\" style=\\"resize: none;\\" wrap=\\"soft\\" type=\\"textarea\\" max-rows=\\"6\\"></textarea>
+    <div class=\\"invalid-feedback\\" id=\\"textarea-feedback\\"></div>
+  </div><button class=\\"btn btn-dark btn-md\\" type=\\"submit\\">
+    <!---->
+    <div class=\\"btn-content\\">Submit</div>
+  </button>
+</form>"
+`;
+
+exports[`FormIssue > should render the form with errors 1`] = `
+"<form class=\\"\\"><input id=\\"title\\" class=\\"form-control is-invalid\\" type=\\"text\\" placeholder=\\"Enter your name\\" aria-invalid=\\"true\\">
+  <div class=\\"invalid-feedback\\" id=\\"title-feedback\\">Title is required</div>
+  <div class=\\"my-3\\"><textarea id=\\"textarea\\" class=\\"form-control is-invalid\\" placeholder=\\"Describe the issue...\\" aria-invalid=\\"true\\" rows=\\"3\\" style=\\"resize: none;\\" wrap=\\"soft\\" type=\\"textarea\\" max-rows=\\"6\\"></textarea>
+    <div class=\\"invalid-feedback\\" id=\\"textarea-feedback\\">Description is required</div>
+  </div><button class=\\"btn btn-dark btn-md\\" type=\\"submit\\">
+    <!---->
+    <div class=\\"btn-content\\">Submit</div>
+  </button>
+</form>"
+`;

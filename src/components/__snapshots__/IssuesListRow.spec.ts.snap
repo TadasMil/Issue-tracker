@@ -1,0 +1,33 @@
+// Vitest Snapshot v1
+
+exports[`IssuesListRow > should render the component 1`] = `
+"<div class=\\"card shadow-sm border-0 mb-3\\">
+  <!---->
+  <!---->
+  <div class=\\"card-body\\">
+    <!---->
+    <!---->
+    <div class=\\"container-fluid\\">
+      <div class=\\"row align-content-stretch\\">
+        <div class=\\"col-xl-2 col-4\\">
+          <p class=\\"card-text\\">
+          <p class=\\"mb-1\\">Title:</p>
+          <h5 class=\\"text-truncate mr-2\\">Test title</h5>
+          </p>
+        </div>
+        <div class=\\"col-xl-2 col-4\\">
+          <p class=\\"card-text\\">
+          <p class=\\"mb-1\\">Description:</p>
+          <h5 class=\\"text-truncate mr-2\\">Test description</h5>
+          </p>
+        </div>
+        <div class=\\"col-xl-8 col-4 align-self-center text-end\\">
+          <actionable-dropdown-stub title=\\"Test title\\" description=\\"Test description\\"></actionable-dropdown-stub>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---->
+  <!---->
+</div>"
+`;

@@ -1,0 +1,15 @@
+// Vitest Snapshot v1
+
+exports[`HomeCallToAction > should render the component 1`] = `
+"<div class=\\"card shadow-sm border-0 text-center\\">
+  <!---->
+  <!---->
+  <div class=\\"card-body\\">
+    <!---->
+    <!---->
+    <h4 class=\\"card-title\\">Having an issue?</h4><a class=\\"d-flex text-decoration-none text-muted fa-1x justify-content-center align-items-center\\" to=\\"/issues/open\\" href=\\"/issues/open\\" target=\\"_self\\"> Submit issue <i class=\\"bi bi-arrow-right-short fa-2x\\"></i></a>
+  </div>
+  <!---->
+  <!---->
+</div>"
+`;

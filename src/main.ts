@@ -9,9 +9,11 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import '@/assets/base.css'
+import store from './store'
 
 const app = createApp(App)
 
+app.use(store)
 app.use(router)
 app.use(BootstrapVue3)
 

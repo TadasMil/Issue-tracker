@@ -1,20 +1,28 @@
-<script setup lang="ts" name="CreateIssue">
+<script setup lang="ts" name="EditIssue">
 import { ref } from 'vue'
 import { useFormValidation } from '@/composables/useValidation'
 import { useStore } from 'vuex'
 
 import FormIssue from './FormIssue.vue'
 
-import type { IFormField } from '@/types'
+import type { IFormField, IIssue } from '@/types'
 
 const store = useStore()
+
+const { issue } = defineProps<{
+  issue: IIssue
+}>()
+
+const emit = defineEmits<{
+  (e: 'close'): void
+}>()
 
 const form = ref<{
   title: string
   description: string
 }>({
-  title: '',
-  description: '',
+  title: issue.title,
+  description: issue.description,
 })
 
 const { fields, validateForm } = useFormValidation<{
@@ -33,25 +41,20 @@ const { fields, validateForm } = useFormValidation<{
   },
 })
 
-const onSubmit = (event: HTMLFormElement) => {
-  event.preventDefault()
+const onSubmit = () => {
   const valid = validateForm()
 
   if (valid) {
-    store.commit('issues/createIssue', form.value)
-    form.value.title = ''
-    form.value.description = ''
+    store.commit('issues/updateIssue', {
+      ...issue,
+      ...form.value,
+    })
+
+    emit('close')
   }
 }
 </script>
 
 <template>
-  <b-card
-    title="Submit an issue"
-    text-variant="muted"
-    title-tag="h2"
-    class="shadow-sm border-0"
-  >
-    <FormIssue v-model="form" :fields="fields" @submit="onSubmit" />
-  </b-card>
+  <FormIssue v-model="form" :fields="fields" @submit="onSubmit" />
 </template>

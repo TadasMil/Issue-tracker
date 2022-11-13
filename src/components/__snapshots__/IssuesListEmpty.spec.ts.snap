@@ -1,0 +1,22 @@
+// Vitest Snapshot v1
+
+exports[`IssuesListEmpty > should render the component 1`] = `
+"<div class=\\"card text-center text-muted shadow-sm border-0\\">
+  <!---->
+  <!---->
+  <div class=\\"card-body\\">
+    <!---->
+    <!---->
+    <div class=\\"h-100 d-flex flex-column justify-content-center align-items-center\\">
+      <p class=\\"card-text\\">
+      <h3 class=\\"mb-1\\">No open issues found</h3>
+      </p>
+      <p class=\\"card-text\\">
+      <p class=\\"mb-1\\">Here you'll see open issues</p>
+      </p>
+    </div>
+  </div>
+  <!---->
+  <!---->
+</div>"
+`;

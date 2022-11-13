@@ -1,0 +1,15 @@
+// Vitest Snapshot v1
+
+exports[`BasePage > should render default slot 1`] = `
+"<div class=\\"m-4\\">
+  <h2 class=\\"mb-3\\">Home</h2>
+  <main>Hello World</main>
+</div>"
+`;
+
+exports[`BasePage > should render the component given home page is active 1`] = `
+"<div class=\\"m-4\\">
+  <h2 class=\\"mb-3\\">Home</h2>
+  <main></main>
+</div>"
+`;

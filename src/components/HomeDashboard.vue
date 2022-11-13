@@ -1,23 +1,28 @@
 <script setup lang="ts" name="HomeDashboard">
 import HomeDashboardWidget from './HomeDashboardWidget.vue'
 
-const widgets = [
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+
+const store = useStore()
+
+const widgets = computed(() => [
   {
     title: 'Open Issues',
-    value: 123,
+    value: store.getters['issues/openIssues'].length || 0,
     color: 'info',
   },
   {
     title: 'Completed Issues',
-    value: 123,
+    value: store.getters['issues/completedIssues'].length || 0,
     color: 'success',
   },
   {
     title: 'Trashed Issues',
-    value: 123,
+    value: store.getters['issues/trashedIssues'].length || 0,
     color: 'danger',
   },
-]
+])
 </script>
 
 <template>
