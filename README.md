@@ -1,6 +1,12 @@
-# issue-tracker
+# Issue Tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+Features:
+
+    • 🛠 Vue 3
+    • ⚡️ Vite
+    • 🛣 Vue Router
+    • 🗄️ Vuex 4
+    • 🎨 Bootstrap 5 + Bootstrap-vue3
 
 ## Recommended IDE Setup
 
