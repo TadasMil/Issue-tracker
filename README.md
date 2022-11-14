@@ -1,11 +1,15 @@
 # Issue Tracker
 
 Features:
-
-    • 🛠 Vue 3
+	
+	• 🛠 Vue 3
+    
     • ⚡️ Vite
+    
     • 🛣 Vue Router
+    
     • 🗄️ Vuex 4
+    
     • 🎨 Bootstrap 5 + Bootstrap-vue3
 
 ## Recommended IDE Setup
